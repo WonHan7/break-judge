@@ -11,16 +11,19 @@
 </head>
 <body>
 
-    <div>
-        <li>Break Judge</li>
-    </div>
+    <ul id="events"></ul>
 
     <div>
         <button id="dancer">Join Dancer</button>
         <button id="judge">Join Judge</button>
-        <input id="chat">
-        <button id="enter">Enter</button>
+
+        <form id="chat-form">
+            <input id="chat" />
+            <button id="enter">Enter</button>
+        </form>
     </div>
 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/client.js"></script>
 </body>
 </html>
