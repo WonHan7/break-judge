@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <link rel="stylesheet" type="text/css" href="css/index_template.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="styles/index_template.css" media="screen"/>
 
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,19 +11,38 @@
 </head>
 <body>
 
-    <ul id="events"></ul>
-
-    <div>
-        <button id="dancer">Join Dancer</button>
-        <button id="judge">Join Judge</button>
-
-        <form id="chat-form">
-            <input id="chat" />
-            <button id="enter">Enter</button>
+    <div class="form-wrapper">
+        <form>
+            <label for="title">Competition Title:</label>
+            <input type="text" id="title" name="title"><br><br>
+    
+            <label for="d1">Dancer(s) #1:</label>
+            <input type="text" id="d1" name="d1"><br><br>
+    
+            <label for="d2">Dancer(s) #2:</label>
+            <input type="text" id="d2" name="d2"><br><br>
+    
+            <label for="num-jud">Number of Judges:</label>
+            <input type="number" id="num-jud" name="num-jud"><br><br>
+    
+            <label for="num-rnds">Rounds:</label>
+            <input type="number" id="num-rnds" name="num-rnds"><br><br>
+    
+            <label for="last">Play Last Round?</label>
+            <select id="last" name="last">
+                <option value="yes-last">Yes</option>
+                <option value="no-last">No</option>
+            </select><br><br>
+    
+            <label for="tie">Enable Tie?</label>
+            <select id="tie" name="tie">
+                <option value="yes-tie">Yes</option>
+                <option value="no-tie">No</option>
+            </select><br><br>
+    
+            <input type="submit">
         </form>
     </div>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="scripts/client.js"></script>
 </body>
 </html>

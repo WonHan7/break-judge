@@ -32,5 +32,5 @@ server.on('error', (err) => {
 });
 
 server.listen(4200, () => {
-    console.log('Break Judge started on 8080');
+    console.log('Break Judge started on 4200');
 });

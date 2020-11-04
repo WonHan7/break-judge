@@ -2,4 +2,63 @@
     margin: 0px;
     padding: 0px;
 }
+.form-wrapper {
+    margin-top: 6.5%;
+    margin-left: 25%;
+    margin-right: 25%;
 
+    padding-top: 25px;
+    padding-left: 145px;
+    padding-bottom: 25px;
+
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 250px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=number] {
+    width: 10px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    -moz-appearance:textfield;
+    outline: none;
+}
+input[type=number]:focus {
+    border: 3px solid #555;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+select {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+@media screen and (min-width: 400px) {
+    .form-wrapper {
+        padding-left: 25px;
+        max-width: 800px;
+    }
+}

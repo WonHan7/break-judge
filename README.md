@@ -48,20 +48,9 @@ Assumptions:
 * It is assumed that the number of judges will always be odd.
 --------------------------------------------------------------------------------------------------
 
-What?
-* A simple web app that allows judges to connect to the platform and display their verdict.
-* Its primary use is to judge local breaking battles in Edmonton.
+APPROACH
 
-Why?
-* This is the first step of a multi-step plan to increase incentives thus attracting more local break dancers.
-
-When?
-* This app should be used for any "official jams" that follow standard judging protocol.
-
-Where?
-* Edmonton-based for the short-term with hopes of going international in the long run.
-
-Who?
-* Freestyle Movement creates opportunities for bboys, bgirls, choreographers and freestyle dancers
-  to grow and build the Hiphop community in Edmonton. We teach classes, organize competitions and run 
-  a weekly open practice session. Check out https://freestylemovement.ca/ to learn more.
+* Learn how to use Single Page Application Frameworks (This web app will be using React.js)
+* Learn how to use Yarn Node Packet Manager
+* Learn how to use Express API
+* Learn how to use Socket.io Library
