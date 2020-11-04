@@ -1,8 +1,8 @@
 # break-judge v1
 
-DESIGN
-
+**DESIGN**
 --------------------------------------------------------------------------------------------------
+
 Page 1: Create Private Room
 
 Page 2: Settings for Room. Settings will include:
@@ -10,7 +10,7 @@ Page 2: Settings for Room. Settings will include:
 * Dancer/Group #1 (Can include optional picture. If picture not included, then just name will be displayed)
 * Dancer/Group #2
 * Number of Judges
-* Names of Judges
+* Names of Judges (Judge's will be prompted to enter their names on connect)
 * Number of Rounds
 * Play Last Round (Y/N) --> Defaults to "End when someone wins"
 * Enable Tie (Y/N) (Tie will always be disabled on the last round)
@@ -40,17 +40,24 @@ Page 4.2: Host's Page
 * If settings is possible, return to room.
 * If setting not possible, return to create a room.
 
-
 Assumptions:
 * Host will always be the one creating the room. The host will not be given the judge screen.
 * It is assumed that the Host will have all material to fill out settings.
 * It is assumed that the number of rounds will always be odd.
 * It is assumed that the number of judges will always be odd.
---------------------------------------------------------------------------------------------------
 
-APPROACH
+
+**APPROACH**
+--------------------------------------------------------------------------------------------------
 
 * Learn how to use Single Page Application Frameworks (This web app will be using React.js)
 * Learn how to use Yarn Node Packet Manager
 * Learn how to use Express API
 * Learn how to use Socket.io Library
+
+**DEVELOPMENT**
+--------------------------------------------------------------------------------------------------
+
+* yarn - restore dependencies
+* yarn init - creates package.json
+* yarn start - starts dev server
